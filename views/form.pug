@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    h1 New Message
+    form(name="new-message", method="post", action="/new")
+        div
+            span.label Author's Name
+            input(type="text", name="author")
+        br
+        div
+            span.label Message
+            input(type="text", name="message")
+        br
+        div
+            input(type="submit", value="add")
